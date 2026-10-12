@@ -13,8 +13,8 @@ public class OpenApiConfig {
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
-                .info(new Info().title("Image Conversion API")
-                        .description("API for converting images to different formats")
+                .info(new Info().title("Image Conversion & News Aggregation API")
+                        .description("API for converting images and aggregating news from multiple sources in parallel")
                         .version("1.0"))
                 .components(new Components().addSchemas("MultipartFileArray", new Schema()
                         .type("array")
